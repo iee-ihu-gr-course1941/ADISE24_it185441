@@ -1,0 +1,195 @@
+*{margin: 0; padding: 0; text-decoration: none; box-sizing:border-box;font-family: 'Righteous'; font-style: italic;}
+
+#wrapper {width: 100%; background-color: aquamarine;}
+#wrapper p,h1,h2,h3,h4,h5{color: #000000;}
+
+/** HEADER START **/
+#header              {background-color:#333333; display:flex; align-items:center; 
+                     justify-content: space-between; box-sizing: border-box; position:relative; top: 0;
+                     }
+#header ul           {display:flex; margin:0px; background-color:#333333;}
+#header ul li        {list-style: none;}
+#header ul li a      {display: flex;padding:0px 30px; float: left; font-weight: bolder;color:rgb(252, 244, 235);font-size:max(1.5vw, 20px); text-decoration: none;}
+#header ul li:link   {color:rgb(252, 244, 235)}
+#header ul li:visited{color:rgb(252, 244, 235)}
+#header ul li:active {color:rgb(252, 244, 235)}
+#header ul li:hover  {color:rgb(252, 244, 235); background-color:#14A8B8;}
+#header ul li:focus  {color:rgb(252, 244, 235)}
+
+#ham-button {
+   position: absolute;
+   top: 5%;
+   right: 8%;
+   display: none;
+   flex-direction: column;
+   justify-content: space-between;
+   width: 30px;
+   height: 21px;
+}
+
+#ham-button span{
+   height: 4px;
+   width: 100%; 
+   background-color:antiquewhite;
+   border-radius: 20px;
+}
+
+@media(max-width:1024px){
+   #header ul li a{
+    padding: 0 20px;
+   }
+}
+@media(max-width:770px){
+
+   #ham-button{display: flex;}
+
+   #logo{width: 35%;}
+
+   #header{
+      align-items:flex-start;
+      flex-direction: column;
+      position: initial;
+   }
+   #header ul{
+      display: none;
+      flex-direction: column; 
+      align-self:flex-end;
+      margin-top: 19%;
+      position: absolute;
+   }  
+   #header ul li{
+    align-self:flex-end;
+    width: 100%;
+   }
+}
+/** HEADER END **/
+
+/**BODY START**/
+#body p  {margin-left: 1.5%;}
+#body h2 {color: #000;}
+#body-img{
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(16rem,1fr)); /**AYTES OI 3 GRAMMES KANOYN AUTO TO EFFECT ME TIS EIKONES. ONLINE STORE**/
+   grid-gap: 1rem;
+}
+/**BODY END**/
+
+/** FOOTER START**/
+.gototop {
+   display:block;
+   background: aquamarine;
+   color: #ffffff;
+   width: 45px;
+   height: 45px;
+   text-align: center;
+   line-height: 1;
+   border-radius: 20px;
+   margin-top: 25px;
+   margin-left: 20px;
+}
+
+#footer{
+   display:flex;
+   width: 100%;
+   height: 160px;
+}
+.contact-info ul li {list-style: none;}
+
+.contact-info  p    {font-size:min(2vw, 11px);}
+
+#footer  p,h2       {color: antiquewhite;}
+
+#footer  h2         {font-size:2.5vw;}
+
+#footer-left        {width: 45%; background-color: #3f3d3d; padding-left: 2%;}
+
+#footer-right       {width: 30%; background-color: #3f3d3d;}
+
+#gototop            {width: 25%; background-color: #3f3d3d;}
+/** FOOTER END**/
+
+
+/** FOOTER-BOTTOM START**/
+#footer-bottom {
+   display:flex;
+   background: #000000;
+   width: 100%;
+   padding: 25px 0;
+   font-size:max(1.3vw, 15px);
+}
+
+#footer-bottom .copyright {
+   position: relative;
+   text-align: left;
+   width: 60%;
+   margin-left: 5%;
+}
+
+#footer-bottom .template-by {
+   text-align: right;
+   width: 40%;
+   margin-right: 5%;
+}
+
+#footer-bottom .copyright p,
+#footer-bottom .template-by p {
+   color: #ffffff;
+   font-weight: 400;
+   margin: 0;
+}
+@media (max-width: 768.98px) {
+   #footer-bottom .copyright,
+   #footer-bottom .template-by {
+       text-align: center; 
+   } 
+}
+/** FOOTER-BOTTOM END**/
+
+
+/** CONTACT FORM **/
+
+#contact-form {
+   height: 100%;
+   padding: 30px;
+   background: rgba(160, 250, 220, 0.877);
+   border-bottom: 160px solid aquamarine;
+}
+
+#contact-form ul li {list-style: none;}
+
+.form      {width: 45%; height: 40px;}
+.subject   {width: 55%; height: 40px;}
+.msg       {width: 75%}
+
+.form,.subject,.msg {margin-bottom: 1.3vw; position: relative; margin-left: 10%; border:3px solid #808080;border-radius: 5px; }
+
+.btn{
+margin-left: 10%;
+height: 25px;
+font-size:max(1.2vw, 15px);
+box-sizing: content-box;
+border:2px solid #808080;
+border-radius: 40px;
+width: 250px;
+}
+
+/** CONTACT MAP **/
+
+#contact-map {
+   height: 100%;
+   padding: 30px;
+   background: rgba(160, 250, 220, 0.877);
+   border-bottom: 40px solid aquamarine;
+}
+#contact-map iframe {
+   width: 100%;
+   height: 450px;
+}
+
+/** NEW-TAB **/
+
+/** RAY CASTING **/
+.sketchcontent{
+margin-top: 200px;
+margin-bottom: 300px;
+}
